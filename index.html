@@ -22,10 +22,12 @@
         <!-- Nav -->
         <nav id="nav">
           <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="left-sidebar.html">About me</a></li>
+            <li class="current">
+              <a href="index.html">Home</a>
+            </li>
+            <li><a href="#intro" data-scroll="intro">About me</a></li>
             <li>
-              <a href="#">My work</a>
+              <a href="#highlights" data-scroll="highlights">My work</a>
               <ul>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Scary Game</a></li>
@@ -33,7 +35,11 @@
                 <li><a href="#">Drink Generator</a></li>
               </ul>
             </li>
-            <li><a href="no-sidebar.html">Contact</a></li>
+            <li>
+              <a href="#knowledges" data-scroll="knowledges">Knowledges</a>
+            </li>
+            <li><a href="#main" data-scroll="main">Feedbacks</a></li>
+            <li><a href="#contact" data-scroll="contact">Contact</a></li>
           </ul>
         </nav>
       </section>
@@ -154,6 +160,25 @@
               </section>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Intro -->
+      <section id="knowledges" class="wrapper style1">
+        <div class="title">Knowledges</div>
+        <div class="container">
+          <p class="style1">Tools and Languages</p>
+          <p class="style2">
+            I'm passionate about technology and innovation, always seeking new
+            challenges and opportunities to learn and grow.
+          </p>
+          <p class="style3">
+            My strong ability to deal with people and their needs, along with my
+            creativity and sensitivity, allows me to create intuitive and
+            attractive interfaces. This website is built using Javascript, HTML
+            and CSS, and it's fully responsive, making it easily accessible on
+            any device.
+          </p>
         </div>
       </section>
 
@@ -307,7 +332,8 @@
             </div>
             <div class="col-6 col-12-medium">
               <!-- Contact -->
-              <section class="feature-list small">
+
+              <section id="contact" class="feature-list small">
                 <div class="row">
                   <div class="col-6 col-12-small">
                     <section>
@@ -364,5 +390,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
   </body>
 </html>
