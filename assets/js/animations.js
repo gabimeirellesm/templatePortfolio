@@ -96,3 +96,18 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(introSection);
+
+/* ANIMATION IMG TOOLS */
+
+const container = document.getElementById("containerTools");
+const link = container.getElementsByTagName("a");
+let position = 0;
+
+setInterval(() => {
+  const currentLink = link[position];
+  const previousLink =
+    position === 0 ? link[link.length - 1] : link[position - 1];
+  container.insertBefore(currentLink, previousLink);
+
+  position = position === 0 ? link.length - 1 : position - 1;
+}, 100);
