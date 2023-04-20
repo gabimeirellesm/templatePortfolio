@@ -82,3 +82,17 @@ function downloadCV() {
 document.getElementById("downloadBtn").addEventListener("click", downloadCV);
 
 /* ANIMATION BOX TEXT */
+const boxAnimation = document.querySelector(".boxAnimation");
+const introSection = document.getElementById("intro");
+
+const observer = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    let box = document.getElementById("box");
+    setInterval(() => {
+      box.classList.toggle("hideBox");
+      box.classList.toggle("showBox");
+    }, 1000);
+  }
+});
+
+observer.observe(introSection);

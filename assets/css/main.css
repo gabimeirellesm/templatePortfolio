@@ -3143,3 +3143,13 @@ ul.actions.special {
     margin-top: 0;
   }
 }
+
+.showBox {
+  transition: 1s;
+  opacity: 1;
+}
+
+.hideBox {
+  opacity: 0;
+  transition: 1s;
+}
