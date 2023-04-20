@@ -1620,6 +1620,7 @@ form textarea {
   -webkit-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  appearance: none;
   -webkit-appearance: none;
   display: block;
   border: 0;
