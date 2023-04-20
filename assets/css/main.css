@@ -2368,18 +2368,20 @@ ul.actions.special {
 
 /* Highlights */
 
-#highlights .highlight {
+#highlights {
   text-align: center;
 }
 
-#highlights .highlight h3 {
+#highlights h3 {
   color: #e97770;
   font-size: 1.15em;
   letter-spacing: 0.05em;
 }
 
-/* Main */
-
+#card:hover {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 /* Knowledges */
 
 #knowledges {
