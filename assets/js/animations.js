@@ -81,6 +81,20 @@ function downloadCV() {
 
 document.getElementById("downloadBtn").addEventListener("click", downloadCV);
 
+document.getElementById("downloadBtn2").addEventListener("click", downloadCV);
+function downloadCV() {
+  const url =
+    "https://www.dropbox.com/s/vn3ahvtvm6gw1nu/Gabriela%20Meirelles%20CV.pdf?dl=1";
+  const link = document.createElement("a");
+  link.href = url;
+  link.setAttribute("download", "CV - Gabriela Meirelles.pdf");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+document.getElementById("downloadBtn2").addEventListener("click", downloadCV);
+
 /* ANIMATION BOX TEXT */
 const boxAnimation = document.querySelector(".boxAnimation");
 const introSection = document.getElementById("intro");

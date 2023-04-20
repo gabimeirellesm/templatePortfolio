@@ -409,6 +409,10 @@ form {
   width: 50%;
 }
 
+.row > .col-x {
+  width: 70%;
+}
+
 .row > .off-6 {
   margin-left: 50%;
 }
@@ -1652,7 +1656,7 @@ form select {
 }
 
 form textarea {
-  min-height: 8em;
+  min-height: 15em;
 }
 
 form ul.actions {
@@ -2536,8 +2540,7 @@ ul.actions.special {
 
 #copyright {
   text-align: center;
-  padding-top: 6em;
-  margin-top: 6em;
+  margin-top: 4em;
   border-top: solid 1px rgba(255, 255, 255, 0.05);
 }
 
@@ -2547,8 +2550,8 @@ ul.actions.special {
   box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.05);
   color: #aaa;
   color: rgba(255, 255, 255, 0.25);
-  padding: 0.75em 2em;
   font-size: 0.9em;
+  margin-top: 4em;
 }
 
 #copyright ul li {
@@ -2630,23 +2633,11 @@ ul.actions.special {
     font-size: 2.25em;
   }
 
-  /* Footer */
-
-  #footer {
-    padding-bottom: 4em;
-  }
-
-  #footer header.style1 {
-    padding-bottom: 4em;
-    margin-bottom: 4em;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.05);
-  }
-
   /* Copyright */
 
   #copyright {
-    padding-top: 4em;
-    margin-top: 4em;
+    padding-top: 5em;
+    margin-top: 5em;
   }
 }
 
@@ -3160,4 +3151,166 @@ ul.actions.special {
 .hideBox {
   opacity: 0;
   transition: 1s;
+}
+
+header.styleX {
+  text-align: center;
+  padding: 3em 0 3em 0;
+  width: 50%;
+}
+
+header.styleX h2 {
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 0.075em;
+  line-height: 1.5em;
+}
+
+header.styleX p {
+  color: #b1b4b9;
+  display: block;
+  font-size: 1.3em;
+  letter-spacing: 0.075em;
+  line-height: 1.5em;
+}
+
+.containerContact {
+  display: flex;
+  align-items: center;
+}
+
+#section4 {
+  background: #282b34 url("images/overlay.png");
+  color: #eee;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.contact-wrapper {
+  max-width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-info {
+  width: 40%;
+  font-size: 1.2rem;
+  color: #eee;
+  text-align: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.contact-info ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-right: 20px;
+}
+
+.contact-info img {
+  width: 2rem;
+}
+
+.contact-info hr {
+  width: 65%;
+  border: 0;
+  height: 2.5px;
+  background-color: #181818;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #eee;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  font-family: "Amiri Quran", serif;
+}
+.contact-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  font-family: "Amiri Quran", serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  font-family: "Amiri Quran", serif;
+  padding-left: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form textarea {
+  height: 150px;
+  font-family: "Amiri Quran", serif;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #181818;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+
+  .contact-info hr {
+    width: 65%;
+  }
 }
