@@ -326,6 +326,7 @@ form {
   flex-wrap: wrap;
   box-sizing: border-box;
   align-items: stretch;
+  justify-content: center;
 }
 
 .row > * {
@@ -454,6 +455,8 @@ form {
 
 .row > .col-12 {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .row > .off-12 {
