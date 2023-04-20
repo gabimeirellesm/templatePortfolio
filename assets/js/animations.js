@@ -65,3 +65,20 @@ async function eraseJobTitle() {
 }
 
 animateJobTitles();
+
+/* DONWLOAD CV */
+document.getElementById("downloadBtn").addEventListener("click", downloadCV);
+function downloadCV() {
+  const url =
+    "https://www.dropbox.com/s/vn3ahvtvm6gw1nu/Gabriela%20Meirelles%20CV.pdf?dl=1";
+  const link = document.createElement("a");
+  link.href = url;
+  link.setAttribute("download", "CV - Gabriela Meirelles.pdf");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+document.getElementById("downloadBtn").addEventListener("click", downloadCV);
+
+/* ANIMATION BOX TEXT */
