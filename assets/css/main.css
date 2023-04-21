@@ -2693,6 +2693,10 @@ ul.actions.special {
     width: auto;
   }
 
+  #knowledges p.style3 {
+    width: auto;
+  }
+
   /* Highlights */
 
   #highlights .highlight {
@@ -3193,5 +3197,12 @@ header.styleX p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #respondive2 p {
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 }
