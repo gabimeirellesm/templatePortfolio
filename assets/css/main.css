@@ -3183,14 +3183,14 @@ header.styleX p {
 }
 
 @media only screen and (max-width: 768px) {
-  #respondive p {
+  #responsive p {
     font-size: 16px;
     margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #responsive a {
+  #responsive2 a {
     padding: 12px 18px;
     font-size: 18px;
     text-align: center;
@@ -3201,7 +3201,7 @@ header.styleX p {
 }
 
 @media only screen and (max-width: 768px) {
-  #respondive2 p {
+  #responsive3 p {
     font-size: 16px;
     margin-bottom: 10px;
   }
