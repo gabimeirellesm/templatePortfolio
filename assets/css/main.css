@@ -112,6 +112,9 @@ section {
 
 body {
   line-height: 1;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
 }
 
 ol,
@@ -135,10 +138,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-body {
-  -webkit-text-size-adjust: none;
 }
 
 mark {
@@ -3179,138 +3178,20 @@ header.styleX p {
   align-items: center;
 }
 
-#section4 {
-  background: #282b34 url("images/overlay.png");
-  color: #eee;
-  color: rgba(255, 255, 255, 0.5);
-  display: flex;
-  align-items: center;
-}
-
-.contact-wrapper {
-  max-width: 100%;
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.contact-info {
-  width: 40%;
-  font-size: 1.2rem;
-  color: #eee;
-  text-align: left;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.contact-info ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-info li {
-  margin-right: 20px;
-}
-
-.contact-info img {
-  width: 2rem;
-}
-
-.contact-info hr {
-  width: 65%;
-  border: 0;
-  height: 2.5px;
-  background-color: #181818;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.contact-info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #eee;
-}
-
-.contact-info p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-  margin-right: 1rem;
-  font-family: "Amiri Quran", serif;
-}
-.contact-form {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 2rem;
-  font-family: "Amiri Quran", serif;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  margin-bottom: 30px;
-  border: none;
-  font-size: 1rem;
-  color: #333;
-  background-color: #fff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-  font-family: "Amiri Quran", serif;
-  padding-left: 1rem;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-
-.contact-form textarea {
-  height: 150px;
-  font-family: "Amiri Quran", serif;
-}
-
-.contact-form button[type="submit"] {
-  background-color: #181818;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-family: "Montserrat", sans-serif;
-}
-
-.contact-form button[type="submit"]:hover {
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #333;
-  font-family: "Montserrat", sans-serif;
-}
-
-@media screen and (max-width: 768px) {
-  .contact-wrapper {
-    flex-direction: column;
+@media only screen and (max-width: 768px) {
+  #respondive p {
+    font-size: 16px;
+    margin-bottom: 10px;
   }
-  .contact-info,
-  .contact-form {
-    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  #responsive a {
+    padding: 12px 18px;
+    font-size: 18px;
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 0;
-  }
-
-  .contact-info hr {
-    width: 65%;
+    justify-content: center;
+    align-items: center;
   }
 }
