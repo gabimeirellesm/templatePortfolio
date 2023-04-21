@@ -3222,3 +3222,26 @@ header.styleX p {
     margin-bottom: 10px;
   }
 }
+
+#contact p {
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact p {
+    text-align: center;
+  }
+}
+
+.iconGif {
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+}
+.iconGif img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5em;
+  height: 2.5 em;
+}
