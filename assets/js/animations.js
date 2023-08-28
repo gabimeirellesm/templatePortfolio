@@ -70,7 +70,7 @@ animateJobTitles();
 document.getElementById("downloadBtn").addEventListener("click", downloadCV);
 function downloadCV() {
   const url =
-    "https://www.dropbox.com/s/u67qqa375r0x8cj/Gabriela%20Meirelles%20-%20CV.pdf?dl=1";
+    "https://www.dropbox.com/scl/fi/kgb6j7f12mub9idlejh5r/Gabriela-Meirelles-CV-D.pdf?rlkey=egvoixjflatmyfos9dfrs5qoa&dl=1";
   const link = document.createElement("a");
   link.href = url;
   link.setAttribute("download", "CV - Gabriela Meirelles.pdf");
@@ -84,7 +84,7 @@ document.getElementById("downloadBtn").addEventListener("click", downloadCV);
 document.getElementById("downloadBtn2").addEventListener("click", downloadCV);
 function downloadCV() {
   const url =
-    "https://www.dropbox.com/s/u67qqa375r0x8cj/Gabriela%20Meirelles%20-%20CV.pdf?dl=1";
+    "https://www.dropbox.com/scl/fi/kgb6j7f12mub9idlejh5r/Gabriela-Meirelles-CV-D.pdf?rlkey=egvoixjflatmyfos9dfrs5qoa&dl=1";
   const link = document.createElement("a");
   link.href = url;
   link.setAttribute("download", "CV - Gabriela Meirelles.pdf");
